@@ -5,7 +5,7 @@ DES simulation of Mac protocol
 
 Ce dépôt contient le projet de simulation d'un protocole de contrôle d'accès au support (MAC) réalisé dans le cadre du cours de réseaux.
 
-## 📋 Présentation du projet
+## Présentation du projet
 L'objectif de ce projet est d'analyser les performances d'un réseau décentralisé composé de $N$ stations partageant un canal de communication unique. [cite_start]Nous étudions spécifiquement l'algorithme **Exponential Backoff**, utilisé pour gérer les collisions de manière autonome par chaque station.
 
 ### Principes du modèle
@@ -14,7 +14,7 @@ L'objectif de ce projet est d'analyser les performances d'un réseau décentrali
 - **Transmission** : La durée d'émission est fixe (1 unité de temps).
 - **Gestion des collisions** : En cas de collision dans l'état $i$, la station passe à l'état $i+1$ et attend un temps aléatoire de moyenne $2^i \tau$ avant de ré-émettre.
 
-## 🛠 Structure du programmeLe simulateur est basé sur une architecture à **événements discrets (DES)** codée en Python. La structure est modulaire et orientée objet :
+## Structure du programmeLe simulateur est basé sur une architecture à **événements discrets (DES)** codée en Python. La structure est modulaire et orientée objet :
 
 - `Station` : Gère l'état local, la file d'attente et la logique de backoff.
 - `Canal` : Gère l'état du support et la détection des conflits temporels.
